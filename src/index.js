@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './Component/Home';
+import Routing from './Component/Routing';
 
-ReactDOM.render(<Home/>, document.getElementById('root'));
 
+ReactDOM.render(<Routing/>, document.getElementById('root'))

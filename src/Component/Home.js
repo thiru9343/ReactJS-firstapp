@@ -1,30 +1,24 @@
-import React, {Component} from 'react';
-import Header from './Header';
-import JSON from '../db.json';
-import NewsDisplay from './NewsDisplay';
+import React from 'react';
 
 
-class Home extends Component {
-    constructor(){
-        super()
+const Home = () => {
+    return (
+        <div className="panel panel-primary">
+            <div className="panel-heading"
+                Home
+            ></div>
+            <div className="panel-body">
+                <div className="jumbotrom">
+                    <h2>Home Page</h2>
+                    <p>Home Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
-        this.state={
-            news: JSON
-        }
-    }
+                </div>
 
-    render(){
-        console.log(this.state.news);
-        return(
-            <React.Fragment>
-              <Header/>
-              <NewsDisplay datalist={this.state.news}/>
-            </React.Fragment>
-        )
-    }
-  
+            </div>
 
+        </div>
+
+    )
 }
 
 export default Home;
-
